@@ -11,13 +11,13 @@
 - Click create
 
 ### Files
-/index.php      Indexpage and Redirectmanagement
-/create.php     Create New Redirect
-/list.php       Overview of all Ridirects
-/config.php     Configurationfile
-/cpassword.php  Change Password
-/passwd.cli.php Create Passwordstring (CLI only!)
-/.htaccess      As you see
-/style/*        Stylesheet and images
-/p/cpasswd      Current Passwordstring
-/r/*            Saved Redirections
+| /index.php | Indexpage and Redirectmanagement |
+| /create.php | Create New Redirect |
+| /list.php | Overview of all Ridirects |
+| /config.php | Configurationfile |
+| /cpassword.php | Change Password |
+| /passwd.cli.php | Create Passwordstring (CLI only!) |
+| /.htaccess | As you see |
+| /style/* | Stylesheet and images |
+| /p/cpasswd | Current Passwordstring |
+| /r/* | Saved Redirections |
