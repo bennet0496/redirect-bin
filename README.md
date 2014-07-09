@@ -11,6 +11,8 @@
 - Click create
 
 ### Files
+| File | Function |
+|------|--------|
 | /index.php | Indexpage and Redirectmanagement |
 | /create.php | Create New Redirect |
 | /list.php | Overview of all Ridirects |
