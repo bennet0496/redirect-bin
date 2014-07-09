@@ -1,0 +1,13 @@
+<Files "passwd.cli.php">
+Order deny,allow
+deny from all
+</Files>
+
+RewriteEngine On
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !create.php
+RewriteCond %{REQUEST_FILENAME} !list.php
+RewriteCond %{REQUEST_FILENAME} !^/style/style.css
+RewriteRule . /index.php [L]
+
+
