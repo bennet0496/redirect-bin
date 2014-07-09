@@ -7,8 +7,9 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <meta name="keywords" content="" />
-    <link href="<?php $webpath ?>/style/style.css" type="text/css" rel="stylesheet"/>
+    <?php echo '<link href="'.$webpath.'/style/style.css" type="text/css" rel="stylesheet"/>' ?>
     <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 </head>
 
 <body onresize="bg_size()" >
@@ -45,21 +46,29 @@
 <form method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>" autocomplete="off">
 <table cellpadding="1" cellspacing="1" summary="" width="100%" border="0">
     <tr>
-        <td><label for="wname">Weiterleitungsname</label><hr />
+        <td><label for="wname">Redirectionname</label><hr />
             <div class="input-group">
-                <span class="input-group-addon">http://<?php echo $_SERVER['SERVER_NAME']; ?>/</span>
-                <input class="form-control" type="text" name="wname" required="required" placeholder="" /> 
+                <span class="input-group-addon" id="input-addon" >http://<?php echo $_SERVER['SERVER_NAME'].$webpath; ?>/</span>
+                <input class="form-control" id="form-control" type="text" name="wname" required="required" placeholder="" /> 
+		<script>
+			$(document).ready(function(){
+				var aws = $('#input-addon').css("width");
+				var aw = aws.substring( 0 , aws.length - 2 );
+				$("#form-control").width(  716 - aw - 22 );
+				alert( 716 - aw );
+			});
+		</script>
             </div>
         </td>
     </tr>
     <tr>
-        <td><label for="wziel">Weiterleitungsziel</label><hr /><input type="text" name="wziel" required="required" /></td>
+        <td><label for="wziel">Destination</label><hr /><input type="text" name="wziel" required="required" /></td>
     </tr>
     <tr>
         <td colspan="2">&nbsp;</td>
     </tr>
     <tr>
-        <td><label for="passwd">Erstellungspasswort</label><hr /><input type="password" name="passwd" required="required" /></td>
+        <td><label for="passwd">Password</label><hr /><input type="password" name="passwd" required="required" /></td>
     </tr>
     <tr>
         <td colspan="2">&nbsp;</td>

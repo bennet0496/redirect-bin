@@ -44,7 +44,7 @@
 </div>
 <div id="logo">
     <img src="<?php echo $logofile ?>" />
-    <span>ByteGamingDE</span>
+    <span><?php echo $headline ?></span>
 </div>
 <div onload="pos()" class="content">
     <table>
