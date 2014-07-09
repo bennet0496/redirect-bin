@@ -3,11 +3,14 @@ Order deny,allow
 deny from all
 </Files>
 
+
 RewriteEngine On
 RewriteRule ^index\.php$ - [L]
-RewriteCond %{REQUEST_FILENAME} !create.php
 RewriteCond %{REQUEST_FILENAME} !list.php
-RewriteCond %{REQUEST_FILENAME} !^/style/style.css
+RewriteCond %{REQUEST_FILENAME} !create.php
+RewriteCond %{REQUEST_FILENAME} !style/
+RewriteCond %{REQUEST_FILENAME} !cpasswd.php
+
 RewriteRule . /index.php [L]
 
 
