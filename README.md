@@ -1,16 +1,16 @@
-=== Installtion ===
+### Installtion
 - Download the Code into the Directory you want to install it
 - Edit config.php
 - Enjoy
 
-=== Create Redirection ===
+### Create Redirection
 - open http://server.name/path/create.php in your Browser
 - Type in the redirectname
 - Type in the Destination
 - Enter your Password (default: passw0rd)
 - Click create
 
-=== Files ===
+### Files
 /index.php      Indexpage and Redirectmanagement
 /create.php     Create New Redirect
 /list.php       Overview of all Ridirects
